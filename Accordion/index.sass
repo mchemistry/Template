@@ -1,0 +1,58 @@
+@keyframes sweep
+  0%  
+    opacity: 0 
+    margin-top: -10px
+  100%  
+    opacity: 1
+    margin-top: 0px
+
+.fadi__faq
+  max-width: 100%
+  margin: 0 auto
+  &__details
+    margin-bottom: 1rem
+    summary
+      font-size: 1rem
+      font-weight: 600
+      background: #4d3284d2
+      color: #fff
+      padding: 0.5rem 1rem
+      max-width: 60%
+      list-style-type: none
+      margin-bottom: 1rem
+      outline: none
+      text-align: left
+      cursor: pointer
+      position: relative
+      &::after, &::before
+        position: absolute
+        display: inline-block
+        width: 12px
+        height: 2px
+        background: #fff
+        content: ""
+        top: 50%
+        right: 20px
+      &::after
+        transform: translateY(-50%)
+        transition: all 0.2s
+      &::before
+        transform: translateY(-50%) rotate(-90deg)
+        transition: transform 0.2s
+      &::-webkit-details-marker
+        display: none
+    .fadi__faq__content
+      margin-left: 20px
+      max-width: 60%
+    &[open]
+      summary ~ *
+        animation: sweep .2s ease-in-out
+      summary::after
+        transform: translateX(12px)
+        opacity: 0
+        transition: all 0.2s
+      summary::before
+        transform: translateY(-50%) rotate(0)
+        transition: transform 0.2s
+        
+      
