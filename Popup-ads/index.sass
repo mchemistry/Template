@@ -1,0 +1,47 @@
+   
+.form-submit-price-container
+    z-index: 99999
+    position: fixed
+    top: 50%
+    left: 50%
+    display: flex
+    // flex-direction: column
+    justify-content: center
+    align-items: center
+    transform: translate(-50%, -50%)
+    height: 400px
+    padding: 8px
+    box-sizing: border-box
+    border-radius: 8px
+    background-image: linear-gradient(to right, #eaf0ff, #B3B6F5)
+    .close-price--pop-up
+        height: 28px
+        width: 28px
+        background: #a377f3
+        border-radius: 99px
+        position: absolute
+        top: -14px
+        right: -14px
+        cursor: pointer
+        transition: background 0.3s
+        &:hover
+            background: #935bfa
+        &::after, &::before
+            content: ''
+            background: #00000028
+            position: absolute
+            height: 16px;
+            width: 2px
+            border-radius: 99px
+            display: inline-block
+            top: 50%
+            left: 50%
+        &::after
+            transform: translate(-50%, -50%) rotate(45deg)
+        &::before
+            transform: translate(-50%, -50%) rotate(-45deg)        
+    img
+        height: 80%
+    #form-price
+        height: 100%
+        width: 300px

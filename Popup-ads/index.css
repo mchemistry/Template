@@ -1,0 +1,73 @@
+.form-submit-price-container {
+  z-index: 99999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 400px;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#eaf0ff), to(#B3B6F5));
+  background-image: linear-gradient(to right, #eaf0ff, #B3B6F5);
+}
+
+.form-submit-price-container .close-price--pop-up {
+  height: 28px;
+  width: 28px;
+  background: #a377f3;
+  border-radius: 99px;
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+
+.form-submit-price-container .close-price--pop-up:hover {
+  background: #935bfa;
+}
+
+.form-submit-price-container .close-price--pop-up::after, .form-submit-price-container .close-price--pop-up::before {
+  content: '';
+  background: #00000028;
+  position: absolute;
+  height: 16px;
+  width: 2px;
+  border-radius: 99px;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+}
+
+.form-submit-price-container .close-price--pop-up::after {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.form-submit-price-container .close-price--pop-up::before {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.form-submit-price-container img {
+  height: 80%;
+}
+
+.form-submit-price-container #form-price {
+  height: 100%;
+  width: 300px;
+}
+/*# sourceMappingURL=index.css.map */

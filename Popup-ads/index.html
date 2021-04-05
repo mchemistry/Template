@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop up</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="form-submit-price-container">
+        <div class="close-price--pop-up"></div>
+        <img src="./qc_mien phi.png" alt="pop-up-form-img">
+        <form class="contact__left-side footer-form" id="form-price">
+            <p style="
+                font-size: 14px;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+            ">Còn một bước nữa, bạn vui lòng để lại thông tin, chúng tôi sẽ gọi điện lại cho bạn!
+            </p>
+            <label for="name" class="price_label">
+                <span>Họ tên <span style="color: red; font-size: 16px;">*</span></span>
+                <input class="contact-input" id="price-name"  type="text" name="name"
+                        placeholder="Nhập tên của bạn..." required >
+            </label>
+            <label for="phone" class="price_label">
+                <span>Số điện thoại <span style="color: red; font-size: 16px;">*</span></span>
+                <input class="contact-input" id="price-phone"  type="number" name="phone"
+                        placeholder="Nhập số điện thoại của bạn..." required >
+            </label>
+            <button type="submit" class="contact-btn-submit" id="price-btn-submit" >
+                <span class="contact-btn--submit-text" id="price-text-btn">Gửi thông tin</span>
+                <div class="three-dot-loading" id="price-loading">
+                    <span class="three-dot-loading--bounce1"></span>
+                    <span class="three-dot-loading--bounce2"></span>
+                    <span class="three-dot-loading--bounce3"></span>
+                </div>
+            </button>
+        </form> 
+    </div>
+</body>
+</html>
